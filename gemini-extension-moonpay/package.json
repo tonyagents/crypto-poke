@@ -1,0 +1,30 @@
+{
+  "name": "@moonpay/gemini-extension",
+  "version": "0.1.0",
+  "description": "Buy crypto with fiat via MoonPay, from inside Gemini CLI.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonpay/gemini-extension.git"
+  },
+  "keywords": [
+    "moonpay",
+    "crypto",
+    "gemini",
+    "gemini-cli",
+    "mcp",
+    "on-ramp"
+  ]
+}

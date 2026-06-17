@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build output & caches
+.next/
+out/
+dist/
+build/
+.turbo/
+.vercel/
+*.tsbuildinfo
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Local data / databases
+data/*.json
+*.db
+*.sqlite
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# OS / logs / editor
+.DS_Store
+*.log
+npm-debug.log*
+.obsidian/workspace*

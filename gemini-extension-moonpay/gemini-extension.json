@@ -1,0 +1,27 @@
+{
+  "name": "moonpay",
+  "version": "0.1.0",
+  "description": "Buy crypto with fiat via MoonPay. Ask Gemini to buy any supported asset and a MoonPay checkout opens in your browser.",
+  "settings": [
+    {
+      "name": "MoonPay API Key",
+      "description": "Your MoonPay publishable API key (starts with pk_live_ or pk_test_). Get one at https://dashboard.moonpay.com/developers.",
+      "envVar": "MOONPAY_API_KEY",
+      "sensitive": false
+    },
+    {
+      "name": "Environment",
+      "description": "Set to 'sandbox' to use buy-sandbox.moonpay.com for testing. Defaults to production.",
+      "envVar": "MOONPAY_ENV",
+      "sensitive": false
+    }
+  ],
+  "mcpServers": {
+    "moonpay": {
+      "command": "node",
+      "args": ["${extensionPath}${/}src${/}server.js"],
+      "cwd": "${extensionPath}"
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
