@@ -1,6 +1,6 @@
 import cron from 'node-cron';
 import { recipeOps, userOps, type Recipe } from '../db/client.js';
-import { mp, resolveToken } from '../services/moonpay.js';
+import { mp, resolveToken } from '../services/nova.js';
 import { sendMessage } from '../services/sendblue.js';
 
 type ScheduledTask = {
@@ -76,7 +76,7 @@ async function executeDCA(recipe: Recipe, config: any, user: any) {
     return;
   }
 
-  // Use MoonPay buy (fiat → crypto) or swap from stablecoin
+  // Use Nova's buy command (fiat → crypto onramp) or swap from stablecoin
   try {
     const result = mp.buy(token, amount_usd, wallet_name);
     const url = result?.checkoutUrl ?? result?.url;

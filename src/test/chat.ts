@@ -1,5 +1,5 @@
 /**
- * Interactive terminal chat — full Claude + MoonPay stack, no Sendblue needed.
+ * Interactive terminal chat — full Claude + Nova stack, no Sendblue needed.
  * Usage: npm run chat
  */
 import 'dotenv/config';
@@ -38,6 +38,7 @@ async function main() {
   const provider = process.env.GROQ_API_KEY ? 'Groq (llama-3.3-70b)' : 'Anthropic (Claude)';
   console.log(`${GREEN}✓  AI:${RESET}      ${provider}`);
 
+  // NOTE: MP points at a real third-party crypto CLI (see src/services/nova.ts)
   const mpCheck = spawnSync(MP, ['user', 'retrieve', '--json'], {
     encoding: 'utf8',
     env: { ...process.env },
@@ -45,12 +46,12 @@ async function main() {
   if (mpCheck.status === 0) {
     try {
       JSON.parse(mpCheck.stdout);
-      console.log(`${GREEN}✓  MoonPay:${RESET} logged in`);
+      console.log(`${GREEN}✓  Nova:${RESET} logged in`);
     } catch {
-      console.log(`${GREEN}✓  MoonPay:${RESET} CLI ready`);
+      console.log(`${GREEN}✓  Nova:${RESET} CLI ready`);
     }
   } else {
-    console.log(`${YELLOW}⚠  MoonPay:${RESET} not authenticated`);
+    console.log(`${YELLOW}⚠  Nova:${RESET} not authenticated`);
     console.log(`${GRAY}   Run: mp login   then restart chat${RESET}`);
   }
 

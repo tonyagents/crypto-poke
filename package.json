@@ -1,7 +1,7 @@
 {
   "name": "crypto-poke",
   "version": "0.1.0",
-  "description": "Crypto-native AI assistant living in iMessage — powered by MoonPay + Claude",
+  "description": "Crypto-native AI assistant living in iMessage — powered by Nova + Claude",
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",

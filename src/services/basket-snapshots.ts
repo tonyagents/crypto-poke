@@ -1,6 +1,6 @@
 import cron from 'node-cron';
 import { basketOps, curatedBasketOps, snapshotOps, type Basket, type BasketSnapshot } from '../db/client.js';
-import { mp } from './moonpay.js';
+import { mp } from './nova.js';
 
 type LegValue = BasketSnapshot['legs'][number];
 

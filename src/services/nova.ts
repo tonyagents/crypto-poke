@@ -1,5 +1,10 @@
 import { spawnSync } from 'child_process';
 
+// NOTE: this module shells out to a real third-party crypto CLI/API (the `mp`
+// binary — MoonPay's agent CLI) for wallets, token data, swaps, and fiat
+// on/off-ramp. That's a real financial integration and can't be renamed
+// without breaking the actual command — swap MP_PATH / this wrapper for your
+// own crypto data + wallet provider in a public fork.
 const MP = process.env.MP_PATH || 'mp';
 
 function run(args: string[]): any {

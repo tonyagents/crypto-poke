@@ -1,6 +1,6 @@
 # Arc — 30/60-day rollout plan
 
-**Owner:** Eric (Product) · **Last updated:** 2026-05-22 · **Drafted from:** `moongate-deck/moongate-to-arc.pdf` (p9 LOE ranking, p10 4–6 week gameplan) + baskets scope in this repo.
+**Owner:** [REDACTED] (Product) · **Last updated:** 2026-05-22 · **Drafted from:** an internal rebrand deck (p9 LOE ranking, p10 4–6 week gameplan) + baskets scope in this repo.
 
 This plan *extends* the deck's 4–6 week gameplan into a 30/60-day rollout — it does not contradict it. Day 0 = launch trigger on the rebrand visual + comms.
 
@@ -44,7 +44,7 @@ Recap from deck p9:
 ### Brand & comms
 - **D0–D3**: Visual rebrand shipped — domain redirects, app icon, in-app brand, deck v-final, X handle migrated/launched.
 - **D2–D5**: Comms strategy for the 250K cohort approved (Legal + Brand + Growth). Draft email #1 + landing page.
-- **D5–D10**: ESP setup confirmed (see `email-outreach-plan.md`), suppression list pulled from MoonPay CRM, segmentation rules agreed.
+- **D5–D10**: ESP setup confirmed (see `email-outreach-plan.md`), suppression list pulled from Nova CRM, segmentation rules agreed.
 - **D10**: Soft re-engagement to a 5% holdout (random 12.5K of 250K) — read the open/click/reply rates before the full send.
 - **D14**: First production send to the remaining 237.5K, gated on holdout signals.
 
@@ -87,7 +87,7 @@ Recap from deck p9:
 - **D35**: Press / influencer outreach (CT inner ring, fintech press).
 
 ### Product
-- **D29–D35**: NLP basket assembly behind beta flag (asset universe = MoonPay-routable allowlist).
+- **D29–D35**: NLP basket assembly behind beta flag (asset universe = Nova-routable allowlist).
 - **D32–D38**: Auto-rebalance mode (opt-in per basket) enabled on drift trigger.
 - **D38–D42**: Performance history surface — snapshot writer (already shipped) drives a `/basket/:id/perf` endpoint and chat surface.
 
@@ -148,7 +148,7 @@ These should be locked by D7 or the plan slips:
 3. **Rebalance default**: notify in v1, auto opt-in in v1.1. (Recommended.)
 4. **Min $20 USDC**: hard floor v1. (Recommended.)
 5. **Backtest data source**: do we have 1–3y price history for the xStocks? If not, drop projected returns from launch comms.
-6. **External wallets**: MoonPay-managed only v1; connect-wallet in v2.
+6. **External wallets**: Nova-managed only v1; connect-wallet in v2.
 7. **Region restrictions** on xStocks for the US cohort — Legal answer needed by D14.
 
 ---

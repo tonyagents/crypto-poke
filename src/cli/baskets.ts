@@ -6,7 +6,7 @@
  */
 import 'dotenv/config';
 import { basketOps } from '../db/client.js';
-import { mp } from '../services/moonpay.js';
+import { mp } from '../services/nova.js';
 import { spawnSync } from 'child_process';
 
 const PHONE   = process.env.TEST_PHONE || '+15550000001';

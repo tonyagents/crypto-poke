@@ -1,6 +1,6 @@
 # Baskets — scope
 
-Drafted against the deck (`moongate-deck/moongate-to-arc.pdf`) and the current repo at `/Users/eplasencia/crypto-poke`.
+Drafted against an internal rebrand deck and the current repo.
 
 ---
 
@@ -96,7 +96,7 @@ Sized rough: **S = <3d, M = <2w, L = >2w**.
 
 ### 3.6 NLP "theme → basket" (M, depends on Agent Co-Pilot)
 - New recipe: prompt Claude with `{ theme, risk_profile, amount_usd, asset_universe }` → returns `assets[]` with weights + rationale.
-- Asset universe = whitelist of MoonPay-routable tokens/xStocks/perp markets, refreshed nightly.
+- Asset universe = whitelist of Nova-routable tokens/xStocks/perp markets, refreshed nightly.
 - Optional projection model: deck shows "+65.3% annual" — needs either a backtest of weighted historical returns (data: 1–3y for xStocks via what source?) or a clearly-labeled "scenario" framing. **Flag legal review.**
 
 ### 3.7 Performance history ✅ writer shipped
@@ -112,11 +112,11 @@ Sized rough: **S = <3d, M = <2w, L = >2w**.
 ## 4. Edge cases & risks
 
 - **xStocks liquidity**: low TVL on smaller names → high slippage on $20 entries. Mitigation: per-asset min-buy floor or route to a different leg.
-- **xStocks are Solana-only today** (MoonPay's routing). A "cross-chain basket" with xStocks still funnels through Solana. Document this; the deck implies full chain choice.
+- **xStocks are Solana-only today** (Nova's routing). A "cross-chain basket" with xStocks still funnels through Solana. Document this; the deck implies full chain choice.
 - **Prediction markets are integer shares.** Can't dollar-weight precisely. Mitigation: round to nearest share + display "approx X%".
 - **Perps carry liquidation risk**. Cannot quietly include in low-risk baskets. Mitigation: explicit risk tier per basket; perp legs gated.
 - **Rebalance churn = tax events + gas.** Min thresholds critical. Likely need a "tax-aware off" toggle (US users).
-- **KYC gates on the 250K cohort.** Many Moongate users may not have completed full KYC for fiat onramp; basket buy flow needs a graceful "complete KYC" fork.
+- **KYC gates on the 250K cohort.** Many NovaGate users may not have completed full KYC for fiat onramp; basket buy flow needs a graceful "complete KYC" fork.
 - **Projected returns are regulatorily fraught.** Anything resembling "+65.3% annual" needs Compliance sign-off; default to "backtest, not a forecast" framing.
 - **Concurrency**: two rebalance triggers firing in parallel for the same basket would double-trade. Need per-basket lock.
 - **Recipe engine restart**: today `recipes/engine.ts` `startRecipeEngine` runs at boot — fine — but a partial rebalance interrupted mid-flight needs replay; the resumable intent in 3.3 covers this.
@@ -132,7 +132,7 @@ Sized rough: **S = <3d, M = <2w, L = >2w**.
 5. **Curated basket editability.** Read-only catalog, or forkable + user-editable? (Today: forkable.)
 6. **Backtest data source.** What feeds the "+139%" numbers? If we don't have it, the cards need a different framing.
 7. **Region restrictions** on xStocks (some xStocks aren't available US-side via certain rails).
-8. **Custody.** MoonPay-managed wallet only, or connect external (Phantom, MetaMask)?
+8. **Custody.** Nova-managed wallet only, or connect external (Phantom, MetaMask)?
 
 ---
 
@@ -155,4 +155,4 @@ Sized rough: **S = <3d, M = <2w, L = >2w**.
 - **v1.1 (D15–D28):** Cross-chain in buy-basket (depends on #1), rebalance recipe with drift trigger only (3.5).
 - **v1.2 (D29–D60):** NLP theme → basket (depends on #3), macro-event triggers, perps leg (depends on #4).
 
-This slicing keeps the Cesto-comparison wins (curated narratives + xStocks + MoonPay checkout) in v1 and pushes the high-LOE agentic claims to v1.1+.
+This slicing keeps the Cesto-comparison wins (curated narratives + xStocks + Nova checkout) in v1 and pushes the high-LOE agentic claims to v1.1+.

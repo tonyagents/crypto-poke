@@ -1,8 +1,8 @@
 # Arc on X — Social one-pager
 
-**Handle:** [@OneMoonGate](https://x.com/OneMoonGate) → rebrand to `@Arc_*` at launch (handle locked by D7) · **Day 0** = the day we flip the rebrand publicly (visual + comms live, email #1 queued).
+**Handle:** [@OneNovaGate](https://x.com/OneNovaGate) → rebrand to `@Arc_*` at launch (handle locked by D7) · **Day 0** = the day we flip the rebrand publicly (visual + comms live, email #1 queued).
 **Brand voice:** first-person founder, crisp, data-led, no hype. Reads like a sharp trader, not a marketing department. Reviewed D60.
-**Content lead:** Eric drives D0–D14. **Successor TBD by D10 — this is a blocker, not an open question.**
+**Content lead:** [REDACTED] drives D0–D14. **Successor TBD by D10 — this is a blocker, not an open question.**
 **Goal:** Build narrative authority around agent-managed baskets + funnel the 250K reactivation cohort into Arc.
 **Why cross-functional:** Every post is a product surface. What eng ships, the agent observes, and the basket does *is* the content. Social cannot run alone.
 
@@ -41,14 +41,14 @@
 **Standing queries → `#social-signals` daily:**
 - Earnings/macro catalysts hitting basket holdings (NVDA, TSLA, AAPL, MSFT, GOOGL, META, AMZN, COIN)
 - Top 10 trending crypto narratives → Pillar D candidates
-- Mentions of `@OneMoonGate` / Arc / Moongate → brand monitoring (negative spike escalates to Eric + Comms in <30 min)
+- Mentions of `@OneNovaGate` / Arc / NovaGate → brand monitoring (negative spike escalates to [REDACTED] + Comms in <30 min)
 - Mentions of Cesto / JoinAutoPilot → reactive content opportunities
 
 ---
 
 ## KPIs — baseline-first
 
-**Week 1 (D0–D7):** Capture baseline on `@OneMoonGate` — followers, avg engagement rate, mention frequency, app click-through. No targets this week.
+**Week 1 (D0–D7):** Capture baseline on `@OneNovaGate` — followers, avg engagement rate, mention frequency, app click-through. No targets this week.
 
 **Targets are deltas from Week-1 baseline:**
 
@@ -64,7 +64,7 @@
 
 ## Crisis comms (1-line escalation)
 
-Account compromise / agent misposts / negative sentiment spike / regulatory flag → **paused immediately by Brand → escalation to Eric + Comms + Legal within 30 min**. Auto-posting stays disabled in v1 specifically so the surface area is bounded.
+Account compromise / agent misposts / negative sentiment spike / regulatory flag → **paused immediately by Brand → escalation to [REDACTED] + Comms + Legal within 30 min**. Auto-posting stays disabled in v1 specifically so the surface area is bounded.
 
 ---
 
@@ -78,7 +78,7 @@ X Pro ($5K) only if Agent Co-Pilot needs raw-tweet recall — decide D60.
 ## Open decisions (lock by D7)
 
 1. **Handle migration** — rebrand in place (recommended, preserves followers) vs. new `@Arc_app` / `@hi_arc` / `@get_arc`.
-2. **Content lead succession** — who replaces Eric at D14? (Hire / contractor / internal reassignment.)
+2. **Content lead succession** — who replaces [REDACTED] at D14? (Hire / contractor / internal reassignment.)
 3. **Spaces** — launch Space at D32–D35 alongside email #2?
 4. **Auto-post threshold** — recommended: never in v1; revisit D60.
 
@@ -86,9 +86,9 @@ X Pro ($5K) only if Agent Co-Pilot needs raw-tweet recall — decide D60.
 
 ## Launch sequence
 
-- **D0–D2** — handle decision · verification application · bio refresh (still `@OneMoonGate`, hints at Arc)
+- **D0–D2** — handle decision · verification application · bio refresh (still `@OneNovaGate`, hints at Arc)
 - **D3–D13** — soft ramp, 1 post/day, no announcement (algorithm cold-start)
-- **D14** — pinned launch thread "Moongate is now Arc" + handle rename if approved + email #1 fires same day
+- **D14** — pinned launch thread "NovaGate is now Arc" + handle rename if approved + email #1 fires same day
 - **D14–D28** — high-frequency replies in Solana / prediction-market / fintech / agent circles
 - **D21** — first Pillar D thread (likely AI Infrastructure)
 - **D32–D35** — public push with email #2 + influencer outreach + optional Spaces

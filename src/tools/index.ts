@@ -1,5 +1,5 @@
 import type Anthropic from '@anthropic-ai/sdk';
-import { mp, resolveToken } from '../services/moonpay.js';
+import { mp, resolveToken } from '../services/nova.js';
 import { recipeOps, pendingOps, basketOps, curatedBasketOps, type BasketAsset } from '../db/client.js';
 import { valueBasket } from '../services/basket-snapshots.js';
 import { v4 as uuid } from 'uuid';
@@ -9,7 +9,7 @@ import { v4 as uuid } from 'uuid';
 export const TOOL_DEFINITIONS: Anthropic.Tool[] = [
   {
     name: 'get_wallets',
-    description: 'List all local MoonPay wallets with their addresses. Call this whenever you need wallet info.',
+    description: 'List all local Nova wallets with their addresses. Call this whenever you need wallet info.',
     input_schema: { type: 'object', properties: {}, required: [] },
   },
   {
@@ -103,7 +103,7 @@ export const TOOL_DEFINITIONS: Anthropic.Tool[] = [
   },
   {
     name: 'buy_crypto',
-    description: 'Buy crypto with fiat via MoonPay onramp. Returns a checkout URL.',
+    description: 'Buy crypto with fiat via Nova onramp. Returns a checkout URL.',
     input_schema: {
       type: 'object',
       properties: {

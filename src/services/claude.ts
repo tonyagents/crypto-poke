@@ -8,7 +8,7 @@ import Anthropic from '@anthropic-ai/sdk';
 import OpenAI from 'openai';
 import { messageOps, userOps, pendingOps, type User } from '../db/client.js';
 import { TOOL_DEFINITIONS, executeTool } from '../tools/index.js';
-import { mp, resolveToken } from './moonpay.js';
+import { mp, resolveToken } from './nova.js';
 
 // ── Provider selection ────────────────────────────────────────────────────────
 
@@ -60,7 +60,7 @@ TOOL RULES (critical — follow exactly):
 - Only skip tools for pure opinion/discussion with zero live data needed
 
 Capabilities:
-- Live prices, trending tokens, token safety checks (via MoonPay CLI)
+- Live prices, trending tokens, token safety checks (via Nova CLI)
 - Portfolio balances across any chain
 - Token swaps (quote → confirm → execute)
 - Buy crypto with fiat (returns checkout URL)

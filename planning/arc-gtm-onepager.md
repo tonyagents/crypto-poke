@@ -1,6 +1,6 @@
 # Arc — Go-to-Market One-Pager
 
-**Product:** Arc (rebrand of MoonGate) · **Owner:** Product · **Date:** 2026-06-03 · **Status:** Pre-launch
+**Product:** Arc (rebrand of NovaGate) · **Owner:** Product · **Date:** 2026-06-03 · **Status:** Pre-launch
 
 ---
 
@@ -9,11 +9,11 @@ Arc lets anyone invest in **themed crypto baskets** — "Made in America," "AI I
 
 ## Why now
 - Retail wants crypto exposure without picking single tokens — baskets are the index-fund analog.
-- MoonPay's rails (fiat onramp, swap, bridge, xStocks, prediction markets) already exist; Arc is the consumer layer on top.
+- Nova's rails (fiat onramp, swap, bridge, xStocks, prediction markets) already exist; Arc is the consumer layer on top.
 - Agentic UX ("describe a theme, get a basket") is newly viable and differentiates from Robinhood/Cash App style single-asset buying.
 
 ## Target user
-Hybrid between **mainstream retail** (Robinhood/Acorns/Cash App mental model) and **crypto-native**. Design leans mainstream-retail. Beachhead: **250K existing MoonPay/MoonGate users** reachable by email on day one — no cold acquisition needed to start.
+Hybrid between **mainstream retail** (Robinhood/Acorns/Cash App mental model) and **crypto-native**. Design leans mainstream-retail. Beachhead: **250K existing Nova/NovaGate users** reachable by email on day one — no cold acquisition needed to start.
 
 ## The moat: social flywheel
 Invest → shareable card (basket art + return stats + "I invested in X via Arc") → share drives discovery → new user invests → shares again. No accounts or followers required; every card links back to a forkable basket.
@@ -49,7 +49,4 @@ Not a DEX, not a single-token app — a curated, narrative-driven, auto-managed 
 - **Bridge/buy fails mid-flight** → resumable intent ledger + auto-refund path
 
 ## Open calls to lock by Day 7
-Asset universe (tokens + xStocks + Polymarket; perps after D43) · rebalance default = notify · $20 min floor · backtest data source · MoonPay-managed custody only in v1.
-
-
-vck_4bVJBj9BYvEibCHv0nDQnlGYgAv7A3uL572X1TcoesFY3irvYf3Q1xHu
+Asset universe (tokens + xStocks + Polymarket; perps after D43) · rebalance default = notify · $20 min floor · backtest data source · Nova-managed custody only in v1.
